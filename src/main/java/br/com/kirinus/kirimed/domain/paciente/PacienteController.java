@@ -3,9 +3,11 @@ package br.com.kirinus.kirimed.domain.paciente;
 import br.com.kirinus.kirimed.framework.CrudRestController;
 import br.com.kirinus.kirimed.framework.JpaCrudService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("pacientes")
+@RestController
+@RequestMapping("pacientes")
 @RequiredArgsConstructor
 public class PacienteController extends CrudRestController<Paciente, Long> {
 
